@@ -17,19 +17,19 @@ class Document: NSDocument {
         // Add your subclass-specific initialization here.
     }
 
+    override func windowControllerDidLoadNib(_ aController: NSWindowController) {
+        super.windowControllerDidLoadNib(aController)
+        // Add any code here that needs to be executed once the windowController has loaded the document's window.
+    }
+    
     override class func autosavesInPlace() -> Bool {
         return true
     }
 
-    override func makeWindowControllers() {
-        // Returns the Storyboard that contains your Document window.
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        let windowController = storyboard.instantiateController(withIdentifier: "Document Window Controller") as! NSWindowController
-        //self.addWindowController(windowController)
-        
-        let viewController = windowController.contentViewController as! ViewController
-        viewController.representedObject = windowController.document
-        self.addWindowController(windowController)
+    override var windowNibName: String? {
+        // Returns the nib file name of the document
+        // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this property and override -makeWindowControllers instead.
+        return "Document"
     }
 
     override func data(ofType typeName: String) throws -> Data {
