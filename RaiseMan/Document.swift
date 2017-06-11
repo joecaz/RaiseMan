@@ -10,6 +10,8 @@ import Cocoa
 
 class Document: NSDocument {
 
+    var employees: [Employee] = []
+    
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
@@ -23,6 +25,10 @@ class Document: NSDocument {
         // Returns the Storyboard that contains your Document window.
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: "Document Window Controller") as! NSWindowController
+        //self.addWindowController(windowController)
+        
+        let viewController = windowController.contentViewController as! ViewController
+        viewController.representedObject = windowController.document
         self.addWindowController(windowController)
     }
 
@@ -38,7 +44,5 @@ class Document: NSDocument {
         // If you override either of these, you should also override -isEntireFileLoaded to return false if the contents are lazily loaded.
         throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
-
-
 }
 

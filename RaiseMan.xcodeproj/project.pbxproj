@@ -12,6 +12,7 @@
 		EB064F661EEC5C820055F0CA /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB064F651EEC5C820055F0CA /* Document.swift */; };
 		EB064F681EEC5C820055F0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB064F671EEC5C820055F0CA /* Assets.xcassets */; };
 		EB064F6B1EEC5C820055F0CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB064F691EEC5C820055F0CA /* Main.storyboard */; };
+		EB064F731EEC5FE90055F0CA /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB064F721EEC5FE90055F0CA /* Employee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EB064F671EEC5C820055F0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB064F6A1EEC5C820055F0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB064F6C1EEC5C820055F0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB064F721EEC5FE90055F0CA /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				EB064F611EEC5C820055F0CA /* AppDelegate.swift */,
 				EB064F631EEC5C820055F0CA /* ViewController.swift */,
 				EB064F651EEC5C820055F0CA /* Document.swift */,
+				EB064F721EEC5FE90055F0CA /* Employee.swift */,
 				EB064F671EEC5C820055F0CA /* Assets.xcassets */,
 				EB064F691EEC5C820055F0CA /* Main.storyboard */,
 				EB064F6C1EEC5C820055F0CA /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB064F641EEC5C820055F0CA /* ViewController.swift in Sources */,
+				EB064F731EEC5FE90055F0CA /* Employee.swift in Sources */,
 				EB064F621EEC5C820055F0CA /* AppDelegate.swift in Sources */,
 				EB064F661EEC5C820055F0CA /* Document.swift in Sources */,
 			);
@@ -254,6 +258,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RaiseMan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.coyotecreeksoftware.RaiseMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -267,6 +272,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RaiseMan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.coyotecreeksoftware.RaiseMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
