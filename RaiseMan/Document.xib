@@ -57,6 +57,9 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="Gty-dB-kOc" name="value" keyPath="objectValue.name" id="b3O-60-Nce"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -86,10 +89,16 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="391" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Table View Cell" id="jPa-TQ-MZq">
+                                                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="percent" lenient="YES" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" id="ogM-cQ-Ygb">
+                                                                    <integer key="multiplier" value="100"/>
+                                                                </numberFormatter>
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="IIE-Fn-tFW" name="value" keyPath="objectValue.raise" id="zSL-P6-ICY"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -100,7 +109,8 @@
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
-                                        <binding destination="umH-V1-UEZ" name="content" keyPath="arrangedObjects" id="f31-UY-QWY"/>
+                                        <binding destination="umH-V1-UEZ" name="content" keyPath="arrangedObjects" id="BXu-2w-yQY"/>
+                                        <binding destination="umH-V1-UEZ" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="BXu-2w-yQY" id="QCO-89-XQX"/>
                                     </connections>
                                 </tableView>
                             </subviews>
@@ -135,9 +145,13 @@
                         <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wcu-VO-J4b">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
                         </buttonCell>
                         <connections>
                             <action selector="remove:" target="umH-V1-UEZ" id="Vb2-TP-lUC"/>
+                            <binding destination="umH-V1-UEZ" name="enabled" keyPath="canRemove" id="0sG-aa-h2c"/>
                         </connections>
                     </button>
                 </subviews>
