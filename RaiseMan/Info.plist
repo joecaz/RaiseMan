@@ -46,7 +46,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Coyote Creek Software. All rights reserved.</string>
 	<key>NSMainNibFile</key>
-	<string>Document</string>
+	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

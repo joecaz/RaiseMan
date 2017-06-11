@@ -13,6 +13,7 @@
 		EB064F681EEC5C820055F0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB064F671EEC5C820055F0CA /* Assets.xcassets */; };
 		EB064F731EEC5FE90055F0CA /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB064F721EEC5FE90055F0CA /* Employee.swift */; };
 		EB35D27A1EED8F4A0059B513 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB35D2791EED8F4A0059B513 /* Document.xib */; };
+		EBC4B8C71EEDB62D00BE5AE4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC4B8C61EEDB62D00BE5AE4 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EB064F6C1EEC5C820055F0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB064F721EEC5FE90055F0CA /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		EB35D2791EED8F4A0059B513 /* Document.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Document.xib; sourceTree = "<group>"; };
+		EBC4B8C61EEDB62D00BE5AE4 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				EB064F721EEC5FE90055F0CA /* Employee.swift */,
 				EB064F671EEC5C820055F0CA /* Assets.xcassets */,
 				EB064F6C1EEC5C820055F0CA /* Info.plist */,
+				EBC4B8C61EEDB62D00BE5AE4 /* MainMenu.xib */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				EB35D27A1EED8F4A0059B513 /* Document.xib in Resources */,
 				EB064F681EEC5C820055F0CA /* Assets.xcassets in Resources */,
+				EBC4B8C71EEDB62D00BE5AE4 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
